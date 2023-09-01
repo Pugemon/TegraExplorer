@@ -307,10 +307,10 @@ void ipl_main()
 			SetKeySlots();
 	}
 
-	if (FileExists("sd:/kefir/switch/kefir-updater/update.te"))
-		RunScript("sd:/kefir/switch/kefir-updater", newFSEntry("update.te"));
-	else if (FileExists("sd:/switch/kefir-updater/update.te"))
-		RunScript("sd:/switch/kefir-updater", newFSEntry("update.te"));
+	if (FileExists("sd:/tea/switch/tea-updater/update.te"))
+		RunScript("sd:/tea/switch/tea-updater", newFSEntry("update.te"));
+	else if (FileExists("sd:/switch/tea-updater/update.te"))
+		RunScript("sd:/switch/tea-updater", newFSEntry("update.te"));
 	else if (FileExists("sd:/startup.te"))
 		RunScript("sd:/", newFSEntry("startup.te"));
 	// else 
